@@ -1,6 +1,6 @@
 FROM ruby:3.3-alpine AS builder
 
-RUN apk add --no-cache build-base sqlite-dev
+RUN apk add --no-cache build-base libpq-dev
 
 WORKDIR /app
 
@@ -12,7 +12,7 @@ RUN bundle install --jobs 4 && \
 
 FROM ruby:3.3-alpine
 
-RUN apk add --no-cache sqlite-libs curl tini tzdata
+RUN apk add --no-cache libpq curl tini tzdata
 
 WORKDIR /app
 

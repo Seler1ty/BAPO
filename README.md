@@ -84,3 +84,16 @@ rails db:test:prepare
 bundle exec rspec
 ```
 
+## Запуск через Docker compose
+
+```bash
+docker compose up -d --build
+```
+
+Проверка образов:
+
+```bash
+docker compose ps
+```
+
+Ожидается вывод трёх образов
