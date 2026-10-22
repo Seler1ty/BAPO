@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "/health", to: "health#show"
   devise_for :users, skip: :all
 
   post "/users/login", to: "sessions#create"

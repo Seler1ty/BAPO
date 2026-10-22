@@ -36,7 +36,7 @@ RSpec.describe Article, type: :model do
     end
 
     it '.recent orders by created_at desc' do
-      expect(Article.recent).to eq([second, first])
+      expect(Article.recent).to eq([ second, first ])
     end
   end
 end

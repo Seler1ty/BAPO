@@ -9,6 +9,6 @@ RSpec.describe 'Tags', type: :request do
 
     get '/tags'
     expect(response).to have_http_status(:ok)
-    expect(json_body[:tags]).to eq(['used'])
+    expect(json_body[:tags]).to eq([ 'used' ])
   end
 end
