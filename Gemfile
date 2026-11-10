@@ -52,6 +52,6 @@ gem "devise", "~> 5.0"
 gem "jwt", "~> 3.3"
 gem "rack-cors", "~> 3.0"
 
-gem "rspec-rails", "~> 8.0", groups: [ :development, :test ]
+gem "rspec-rails", "~> 8.1", groups: [ :development, :test ]
 gem "factory_bot_rails", "~> 6.5", groups: [ :development, :test ]
 gem "shoulda-matchers", "~> 8.0", groups: [ :development, :test ]
